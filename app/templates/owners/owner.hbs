@@ -1,0 +1,11 @@
+{{outlet}}
+<section class="owner-section">
+{{#link-to 'owners' tagName="button" class="back"}}Back{{/link-to}}
+
+<p>{{fullName}}</p>
+<img class="profile-img" {{bind-attr src=imageUrl alt=fullName}} >
+
+<p class="interests"><label>Interests: </label>{{interests}}</p>
+<p class="fav-color"><label>Favorite Color: </label>{{favoriteColor}}</p>
+
+</section>

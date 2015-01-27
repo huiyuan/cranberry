@@ -1,0 +1,9 @@
+{{yield}}
+<ul {{bind-attr class=showNavigation::closed}}>
+	{{#link-to 'index' tagName='li'}}Home{{/link-to}}
+	{{#link-to 'dashboard' tagName='li'}}Dashboard{{/link-to}}
+	{{#link-to 'gallery' tagName='li'}}Gallery{{/link-to}}
+	{{#link-to 'owners' tagName='li'}}Owners{{/link-to}}
+</ul>
+<button class="nav-toggle" {{action 'toggleNav'}}>toggle</button>
+

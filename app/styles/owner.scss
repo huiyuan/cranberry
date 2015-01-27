@@ -1,0 +1,29 @@
+.owners-list {
+	width: 700px;
+	margin: auto;
+
+	li {
+		padding: 0 20px;
+		border: 1px solid transparent;
+		&:hover {
+			border-color: #ccc;
+			cursor: pointer;
+		}
+	}
+}
+
+.owner-section {
+	width: 700px;
+	text-align: center;
+	margin: auto;
+	.profile-img {
+		width: 50%;
+	}
+
+	.back {
+		float: left;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

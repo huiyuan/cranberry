@@ -1,0 +1,27 @@
+{{outlet}}
+
+
+<h2 id="title">{{name}}</h2>
+<figure class="profile-img">
+	<img {{bind-attr src=moodImageUrl alt=currentMood.mood}} />
+</figure>
+<section class="status">
+	<p>
+		<label>Status: </label>
+		<span class="status">{{status}}</span>
+	</p>
+	<p>
+		<label>Satisfaction Score: </label>
+		<span class="status">{{happyScore}}</span>
+	</p>
+</section>
+
+<section class="actions">
+	<ul>
+		<li>{{do-something action="increaseBy" score=15 behavior="food"}}</li>
+		<li>{{do-something action="increaseBy" score=15 behavior="water"}}</li>
+		<li>{{do-something action="increaseBy" score=15 behavior="walk"}}</li>
+		<li>{{do-something action="increaseBy" score=15 behavior="belly rub"}}</li>
+		<li>{{do-something action="decreaseBy" score=9 behavior="bad"}}</li>
+	</ul>
+</section>

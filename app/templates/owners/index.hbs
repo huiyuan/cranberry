@@ -1,0 +1,15 @@
+<section class="owners">
+	<ul class="owners-list">
+		{{#each owner in model}}
+			{{#link-to 'owners.owner' owner tagName="li"}}
+				<figure class="profile-img">
+					<img {{bind-attr src=owner.imageUrl alt=owner.fullName}} >
+				</figure>
+				<figureCaption>
+					<p>{{owner.fullName}}</p>
+					<p><label>Favorite Color: </label>{{owner.favoriteColor}}</p>
+				</figureCaption>
+			{{/link-to}}
+		{{/each}}
+	</ul>
+</section>

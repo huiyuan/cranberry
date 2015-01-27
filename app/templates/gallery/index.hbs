@@ -1,0 +1,10 @@
+<section {{bind-attr class=":image-list modalOpen:fade-out"}}>
+	<ul {{action "fadeOut"}}>
+		{{#each image in controller}}
+			{{#link-to "gallery.show" image tagName="li"}}
+				<img {{bind-attr src=image.url title=image.title}} />
+				<figcaption>{{image.title}}</figcaption>
+			{{/link-to}}
+		{{/each}}
+	</ul>
+</section>

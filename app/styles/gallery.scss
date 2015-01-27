@@ -1,0 +1,50 @@
+.image-list {
+	padding: 20px 40px;
+	font-size: 0;
+	overflow: hidden;
+
+	li {
+		width: 200px;
+		height: 200px;
+		font-size: 16px;
+
+		margin-top: 10px;
+		&:not(:nth-child(4n+4)) {
+			margin-right:5px;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.modal-container {
+	position: absolute;
+	top: 0;
+	min-height: 100%;
+	width: 100%;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.9);
+
+	img {
+		width: 500px;
+		height: 500px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 20px;
+	}
+
+	.close {
+		float: right;
+		margin: 10px 10px 0 0;
+	}
+
+	.prev, .next {
+		display: inline-block;
+	}
+}

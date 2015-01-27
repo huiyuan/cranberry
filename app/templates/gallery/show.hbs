@@ -1,0 +1,18 @@
+<div class="modal-container">
+	{{#link-to 'gallery' class="close fa fa-times fa-2x" tagName="i"}}
+		<span class="aria-hidden">Close</span>
+	{{/link-to}}
+	<div class="modal-header">
+		<p>{{model.title}}</p>
+	</div>
+	<div class="modal-content">
+		<i class="prev fa fa-chevron-left fa-2x" {{action 'showPrev'}}>
+			<span class="aria-hidden">Previous</span>
+		</i>
+		<img {{bind-attr src=model.url alt=model.title}} />
+		<i class="next fa fa-chevron-right fa-2x" {{action 'showNext'}}>
+			<span class="aria-hidden">Next</span>
+		</i>
+	</div>
+</div>
+
