@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Cranberry
 
 This README outlines the details of collaborating on this Ember application.
@@ -52,7 +52,7 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
-=======
+
 # cranberry
 Cranberry's official website
->>>>>>> 3c40386388775244d10c03da64094cf2a0b46b88
+
